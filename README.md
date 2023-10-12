@@ -16,6 +16,7 @@ Get request:
 method: GET
 route: /cars || /cars/{id}
 body: {
+  id: NUMBER,
   brand: STRING,
   model: STRING,
   year: NUMBER,
@@ -23,7 +24,7 @@ body: {
 ```
 
 ## UML Diagram
-![Serverless API UML Diagram](./public/images/401-class-13-lab.jpg)
+![Serverless API UML Diagram](./public/images/serverless-api.png)
 
 ## PR link
 [GET Request PR link](https://github.com/cleecoloma/code-academy-parcel-service/pull/3)
