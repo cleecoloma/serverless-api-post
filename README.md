@@ -13,7 +13,7 @@
 
 Get request:
 ```text
-method: GET
+method: POST
 route: /cars || /cars/{id}
 body: {
   id: NUMBER,
@@ -22,6 +22,9 @@ body: {
   year: NUMBER,
 }
 ```
+
+Output:
+> response with status code and body - new car
 
 ## UML Diagram
 ![Serverless API UML Diagram](./public/images/serverless-api.png)
