@@ -14,10 +14,10 @@ const carsSchema = new dynamoose.Schema({
 const carsModel = dynamoose.model('Cars', carsSchema);
 
 exports.handler = async (event) => {
-  console.log("HERES THE EVENT : ", event)
+  console.log('HERES THE EVENT : ', event);
   try {
-    const requestBody = JSON.parse(event);
-
+    const requestBody = JSON.parse(event.body);
+    console.log('HERES THE EVENT BODY: ', event.body);
     if (
       !requestBody ||
       !requestBody.id ||
