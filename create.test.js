@@ -12,9 +12,7 @@ describe('Testing the createCar lambda function', () => {
       year: 2022,
     };
 
-    const event = {
-      body: JSON.stringify(carData),
-    };
+    const event = JSON.stringify(carData);
 
     let response = await handler(event);
     expect(response.statusCode).toEqual(201); // 201 Created status code
@@ -33,9 +31,7 @@ describe('Testing the createCar lambda function', () => {
       year: 2022,
     };
 
-    const event = {
-      body: JSON.stringify(carData),
-    };
+    const event = JSON.stringify(carData);
 
     let response = await handler(event);
     expect(response.statusCode).toEqual(400); // 400 Bad Request status code

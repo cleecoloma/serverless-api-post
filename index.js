@@ -16,7 +16,7 @@ const carsModel = dynamoose.model('Cars', carsSchema);
 exports.handler = async (event) => {
   console.log("HERES THE EVENT : ", event)
   try {
-    const requestBody = JSON.parse(event.body);
+    const requestBody = JSON.parse(event);
 
     if (
       !requestBody ||
